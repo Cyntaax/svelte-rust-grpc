@@ -1,0 +1,17 @@
+[package]
+name = "streamthting"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "0.5.0", features = ["json"], default-features = false }
+rust-embed = "8.3.0"
+tokio = { version = "1.36.0", features = ["full"] }
+tonic = "0.11.0"
+tonic-web = "0.11.0"
+prost = "0.12.3"
+
+[build-dependencies]
+tonic-build = "0.11.0"

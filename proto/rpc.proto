@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+package rpc;
+
+
+message Normal {
+  int32 id = 1;
+}
+
+message Blank {
+  bool blank = 1;
+}
+
+
+service Main {
+  rpc Test(Normal) returns (Blank);
+}
